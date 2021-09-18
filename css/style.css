@@ -1,0 +1,18 @@
+body{
+    border-collapse: collapse;
+}
+
+.bi {
+    color: #1259c3;
+}
+
+ul {
+    margin: 30px;
+}
+
+.mas {
+    color: #fff!important;
+}
+section {
+    margin:10% 0 15% 0;
+}
