@@ -20,6 +20,12 @@ body {
     margin: 20px;
 }
 
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #galery .col-lg-3 {
     position: relative;
     margin: 0 !important;
@@ -34,10 +40,10 @@ body {
 
 .img-overlay {
     position: absolute;
-    top: 2.9%;
-    left: 4%;
-    width: 92.2%;
-    height: 94.5%;
+    top: 2.6%;
+    left: 3.5%;
+    width: 93%;
+    height: 95%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
