@@ -4,3 +4,5 @@ Taller 1 grupo 8
 
 
 Pagina web para buscar pelis estrenos en tu cine favorito
+
+Usar bootrasp para pagina de contacto
