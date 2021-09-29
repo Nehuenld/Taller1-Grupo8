@@ -1,0 +1,20 @@
+h1{
+    width: 50%;
+    color: rgb(88, 88, 76);
+    margin-top:50px;
+    
+}
+h1:hover{
+    color: black;
+}
+span {
+    background-color: yellow;
+}
+
+strong {
+    color: rebeccapurple;
+}
+
+em {
+    color: rebeccapurple;
+}
