@@ -6,37 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Contacto</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  
 </head>
 <body>
-    <h1>Contacta con nosotros</h1>
-    <h2>info@cinema.com.ar</h2>
-
-<section>
-    <form name="formularioContacto" action="">
-        <label>Nombre:</label>
-        <input type="text" placeholder="Introduce tu nombre">
-        <br>
-        <label>Correo electronico:</label>
-        <input type="email">
-        <br>
-        <label>Mensaje:</label>
-        <textarea name="Mensaje" spellcheck="true"></textarea>
-        <br>
-        <button onClick="alert('¡Su mensaje fue enviado con éxito! Gracias por comunicarse con nosotros, en breve nos pondremos en contacto')">Enviar</button>
-    </form>
+    <div class="titulo1">
+        <h1 class="display-3">Contacta con nosotros</h1>
+    </div> 
+    <div class="titulo2">
+        <h2>info@cinema.com.ar</h2>
+    </div>    
     
 
-</section>
+    <div class="caja">
+        <form class="formulario" name="formularioContacto" action="">
+            <input class="form-control form-control-lg" type="text" placeholder="Nombre y Apellido" aria-label=".form-control-lg example">
+            <br>
+            <input class="form-control form-control-lg" type="text" placeholder="Email" aria-label=".form-control-lg example">
+            <br>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione género</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+              </select>
+            <br>
+            <div class="mb-3">
+                <textarea class="form-control form-control-lg" type="text" id="exampleFormControlTextarea1" rows="4" placeholder="Comentario"></textarea>
+            </div>
+            <div class="botonEnviar">
+                <button type="button" class="btn btn-outline-dark" onClick="alert('¡Su mensaje fue enviado con éxito! Gracias por comunicarse con nosotros, en breve nos pondremos en contacto')">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
 
-
-<p>Veggies es bonus vobis, proinde vos postulo essum magis <span>kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo
-    melon azuki bean garlic.</p>
-
-<p>Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-
-<p>Turnip greens yarrow ricebean rutabaga <em>endive cauliflower</em> sea lettuce kohlrabi amaranth water spinach avocado
-    daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-</p>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,8 +1,6 @@
 h1{
-    width: 50%;
     color: rgb(88, 88, 76);
     margin-top:50px;
-    
 }
 h1:hover{
     color: black;
@@ -17,4 +15,24 @@ strong {
 
 em {
     color: rebeccapurple;
+}
+
+.titulo1{
+    text-align: center;
+    margin: 50px 20px 40px 20px;
+    
+}
+.titulo2{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.formulario{
+    width: 50%;
+    margin: auto;
+}
+
+.botonEnviar{
+    text-align: center;
 }
