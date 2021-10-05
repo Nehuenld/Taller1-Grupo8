@@ -37,22 +37,22 @@
                 </div>
             </div>
         </div>
-<header>
-    <!-- NOMBRE DE LA PELICULA -->
-    <br>
-    <br>
+        <header>
+            <!-- NOMBRE DE LA PELICULA -->
+            <br>
+            <br>
 
 
-    <h1>BATMAN</h1>
-</header>
-        <div class="conteiner">
+            <h1>BATMAN</h1>
+        </header>
+        <div class="container">
             <br>
             <br>
             <img src="imagenes/batman.jpg"></img>
             <br>
             <br>
         </div>
-        
+
         <div class="conteiner">
             <h2>DESCRIPCION / SINOPSIS</h2>
             <br>
@@ -60,35 +60,67 @@
             <br>
             <br>
             <br>
-            
+
         </div>
         <hr>
         <div class="conteiner">
             <img src="imagenes/trailerbatman.jpg"></img>
             <br>
         </div>
-        <div
-            <a href="https://www.youtube.com/watch?v=YNl8yV8oPZM" target="_blank">
-                <button>VER TRAILER</button>
+        <div <a href="https://www.youtube.com/watch?v=YNl8yV8oPZM" target="_blank">
+            <button>VER TRAILER</button>
             </a>
         </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         </div>
         <hr>
     </header>
-    <div class="container">
-        <div class="row comentarios justify-content-center">
-            <div class="col-6">
-                <form action="" class="form_comentarios d-flex justify-content-end">
-                    <textarea name="" id="" placeholder="Dejanos tu opinion"></textarea>
-                    <button class="btn" type="button">Comentar</button>
-                </form>
+    <div class="container" style="padding-top: 3vw;">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">¡Dejanos tu opinión sobre la película!</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tu comentario acá"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Tu e-mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <label for="customRange3" class="form-label">Valorá la película</label>
+
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                        ☆
+                      </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                        ☆
+                      </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                        ☆
+                      </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                        ☆
+                      </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                        ☆
+                    </button>
+                </div>
             </div>
         </div>
+
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
     </div>
     <footer class="py-5">
         <div class="row">
@@ -147,6 +179,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>
