@@ -1,4 +1,4 @@
-// Test de usar javascript para tomar el elementoProducto(titulo) y 
+// hice un test de usar javascript para tomar el elementoProducto(titulo) y 
 // posicionarlo en la paginaProducto(pagina Joha), pero todavia no encontre solucion
 
 
