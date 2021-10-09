@@ -1,4 +1,4 @@
-body{
+body {
     border-collapse: collapse;
 }
 
@@ -13,6 +13,7 @@ ul {
 .mas {
     color: #fff!important;
 }
+
 section {
-    margin:10% 0 15% 0;
+    margin: 10% 0 15% 0;
 }

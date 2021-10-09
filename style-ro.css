@@ -3,9 +3,21 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+#botones {
+    /*esto no es para nada responsive, arreglar*/
+    padding-left: 50px;
+    padding-top: 1.5vw;
+    margin: 20px;
+}
+
 .dropdown {
     float: right;
     margin: 20px;
+}
+
+#botones-mostrar {
+    /*esto no es para nada responsive, arreglar*/
+    padding-left: 430px;
 }
 
 #main-container {

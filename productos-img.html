@@ -15,18 +15,58 @@
 
 <body>
     <section id="galery" class="container">
-        <div class="row">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ordenar
-                    </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Destacados</a></li>
-                    <li><a class="dropdown-item" href="#">A-Z</a></li>
-                    <li><a class="dropdown-item" href="#">Z-A</a></li>
-                </ul>
+        <div id="botones" class="row">
+            <div id="boton-sort" class="col-1">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ordenar
+                        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Destacados</a></li>
+                        <li><a class="dropdown-item" href="#">A-Z</a></li>
+                        <li><a class="dropdown-item" href="#">Z-A</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+
+            <div id="botones-mostrar" class="col-5">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Mostrar por categoría
+                            </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Comedia</a></li>
+                            <li><a class="dropdown-item" href="#">Acción</a></li>
+                            <li><a class="dropdown-item" href="#">Drama</a></li>
+                            <li><a class="dropdown-item" href="#">Etc</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mostrar por idioma
+                            </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Subtituladas</a></li>
+                            <li><a class="dropdown-item" href="#">Dobladas</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Mostrar por empresa
+                            </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Fox</a></li>
+                            <li><a class="dropdown-item" href="#">Marvel</a></li>
+                            <li><a class="dropdown-item" href="#">Dreamworks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/After-almas-perdidas.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">After, almas perdidas</div>
@@ -36,7 +76,7 @@
                     <!--probando poner el tag a en distintas posiciones, para decidir cual va-->
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <a href="#">
                     <img src="Imagenes/Akira.jpg" alt="">
                     <div class="img-overlay img-overlay-blur">
@@ -55,63 +95,63 @@
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/Cry_Macho.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Cry Macho</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/el-escuadron-suicida.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">El Escuadrón Suicida</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/escape-room-2.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Escape<br> Room 2</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/Free_Guy.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Free Guy</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/justicia-implacable.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Justicia Implacable</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/Maligno.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Maligno</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/PETER_RABBIT.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Peter Rabbit, conejo en fuga</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/shang-chi.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Shang Chi y la leyenda de los diez anillos</div>
                     <p class="img-subtitle">Reservar</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-xs-2">
                 <img src="Imagenes/Space-Jam.jpg" alt="">
                 <div class="img-overlay">
                     <div class="img-title">Space Jam, una nueva era</div>
