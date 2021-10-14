@@ -10,16 +10,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style-ro.css" />
+    <link rel="preload" href="imagenes/background-1920.png" as="image" />
     <title>Catálogo de películas</title>
 </head>
+
+<style>
+    body {
+        background-color: rgb(30, 27, 43);
+        background-image: url(Imagenes/background-1920.jpg);
+        background-size: 100% auto;
+    }
+</style>
 
 <body>
     <section id="galery" class="container">
         <div class="container-fluid">
             <div id="botones" class="row">
-                <div id="boton-sort" class="col-1">
+                <div id="boton-sort" class="col-lg-4">
                     <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn dropdown-toggle button-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           Ordenar
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -33,7 +42,7 @@
                 <div id="botones-mostrar" class="col-5">
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <div class="dropdown">
-                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn dropdown-toggle button-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Mostrar por categoría
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -48,7 +57,7 @@
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn dropdown-toggle button-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Mostrar por idioma
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -57,7 +66,7 @@
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn dropdown-toggle button-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Mostrar por empresa
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">

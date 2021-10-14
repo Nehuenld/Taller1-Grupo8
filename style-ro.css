@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url(Imagenes/background.jpg);
-    background-size: 100% auto;
 }
 
 #botones {
     /*esto no es para nada responsive, arreglar*/
-    padding-left: 20vw;
-    padding-top: 1.5vw;
+    /*padding-left: 20vw;*/
+    /*padding-top: 1.5vw;*/
     margin: 20px;
 }
 
 .dropdown {
     float: right;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 
 #botones-mostrar {
     /*esto no es para nada responsive, arreglar*/
     /*padding-left: 430px;*/
+}
+
+.button-transparent {
+    background-color: rgba(34, 33, 33, 0.5);
+    color: white;
+}
+
+.button-transparent:hover {
+    background-color: rgba(39, 8, 68, 0.637);
+    color: wheat;
 }
 
 #main-container {
@@ -50,6 +58,9 @@ body {
     width: 100%;
     height: 26rem;
     display: block;
+    border-color: white;
+    border-width: 0.1vh;
+    border-style: solid;
 }
 
 .img-overlay {
