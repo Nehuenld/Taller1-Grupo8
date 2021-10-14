@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body {
     font-family: 'Quicksand', sans-serif;
+    background-image: url(Imagenes/background.jpg);
+    background-size: 100% auto;
 }
 
 #botones {
     /*esto no es para nada responsive, arreglar*/
-    padding-left: 50px;
+    padding-left: 20vw;
     padding-top: 1.5vw;
     margin: 20px;
 }
@@ -17,7 +19,7 @@ body {
 
 #botones-mostrar {
     /*esto no es para nada responsive, arreglar*/
-    padding-left: 430px;
+    /*padding-left: 430px;*/
 }
 
 #main-container {

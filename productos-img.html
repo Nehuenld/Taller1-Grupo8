@@ -15,51 +15,57 @@
 
 <body>
     <section id="galery" class="container">
-        <div id="botones" class="row">
-            <div id="boton-sort" class="col-1">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="container-fluid">
+            <div id="botones" class="row">
+                <div id="boton-sort" class="col-1">
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           Ordenar
                         </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Destacados</a></li>
-                        <li><a class="dropdown-item" href="#">A-Z</a></li>
-                        <li><a class="dropdown-item" href="#">Z-A</a></li>
-                    </ul>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Destacados</a></li>
+                            <li><a class="dropdown-item" href="#">A-Z</a></li>
+                            <li><a class="dropdown-item" href="#">Z-A</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div id="botones-mostrar" class="col-5">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div id="botones-mostrar" class="col-5">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Mostrar por categoría
                             </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Comedia</a></li>
-                            <li><a class="dropdown-item" href="#">Acción</a></li>
-                            <li><a class="dropdown-item" href="#">Drama</a></li>
-                            <li><a class="dropdown-item" href="#">Etc</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Documental</a></li>
+                                <li><a class="dropdown-item" href="#">Drama</a></li>
+                                <li><a class="dropdown-item" href="#">Documental</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                                <li><a class="dropdown-item" href="#">Thriller</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Mostrar por idioma
                             </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Subtituladas</a></li>
-                            <li><a class="dropdown-item" href="#">Dobladas</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Subtituladas</a></li>
+                                <li><a class="dropdown-item" href="#">Dobladas</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Mostrar por empresa
                             </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Fox</a></li>
-                            <li><a class="dropdown-item" href="#">Marvel</a></li>
-                            <li><a class="dropdown-item" href="#">Dreamworks</a></li>
-                        </ul>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Fox</a></li>
+                                <li><a class="dropdown-item" href="#">Marvel</a></li>
+                                <li><a class="dropdown-item" href="#">Dreamworks</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,17 +73,17 @@
 
         <div class="row">
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/After-almas-perdidas.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">After, almas perdidas</div>
-                    <a href="#">
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/After-almas-perdidas.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">After, almas perdidas</div>
                         <p class="img-subtitle">Reservar</p>
-                    </a>
-                    <!--probando poner el tag a en distintas posiciones, para decidir cual va-->
-                </div>
+                        <!--probando poner el tag a en distintas posiciones, para decidir cual va-->
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <a href="#">
+                <a href="PaginaJoha.html" target="_blank">
                     <img src="Imagenes/Akira.jpg" alt="">
                     <div class="img-overlay img-overlay-blur">
                         <!--la 2da clase es para probar otro tipo de efecto en hover, después vemos la que más nos guste-->
@@ -89,74 +95,95 @@
             <!--[MODIFICACION-FACU] Ro estaba probando usar el Href para que me enlazara a la paginaProducto para ver como quedaba,
             el tema es que se le cambia el formato al titulo por el azul de tipo link -->
             <div class="col-lg-3 col-md-6">
-                <img class="imagen" src="Imagenes/Candyman.jpg" alt="">
-                <div class="img-overlay">
-                    <div id="Candyman" class="img-title"><a href="PaginaJoha.html" target="_blank"> Candyman </a></div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img class="imagen" src="Imagenes/Candyman.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div id="Candyman" class="img-title">Candyman</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/Cry_Macho.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Cry Macho</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/Cry_Macho.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Cry Macho</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-xs-2">
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/el-escuadron-suicida.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">El Escuadrón Suicida</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/el-escuadron-suicida.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">El Escuadrón Suicida</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/escape-room-2.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Escape<br> Room 2</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/escape-room-2.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Escape<br> Room 2</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/Free_Guy.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Free Guy</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/Free_Guy.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Free Guy</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/justicia-implacable.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Justicia Implacable</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/justicia-implacable.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Justicia Implacable</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/Maligno.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Maligno</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/Maligno.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Maligno</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/PETER_RABBIT.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Peter Rabbit, conejo en fuga</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/PETER_RABBIT.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Peter Rabbit, conejo en fuga</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/shang-chi.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Shang Chi y la leyenda de los diez anillos</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/shang-chi.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Shang Chi y la leyenda de los diez anillos</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-xs-2">
-                <img src="Imagenes/Space-Jam.jpg" alt="">
-                <div class="img-overlay">
-                    <div class="img-title">Space Jam, una nueva era</div>
-                    <p class="img-subtitle">Reservar</p>
-                </div>
+                <a href="PaginaJoha.html" target="_blank">
+                    <img src="Imagenes/Space-Jam.jpg" alt="">
+                    <div class="img-overlay img-overlay-blur">
+                        <div class="img-title">Space Jam, una nueva era</div>
+                        <p class="img-subtitle">Reservar</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
