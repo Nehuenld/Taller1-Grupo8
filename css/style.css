@@ -1,12 +1,17 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../Imagenes/background.jpg);
+    background-size: 100% auto;
+}
 
 
 .bi {
-    color: #1259c3;
+    color:#fff;
 }
 
 
 .mas {
-    color: #fff!important;
+    color:#fff!important;
 }
 
 section {
