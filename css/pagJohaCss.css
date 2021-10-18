@@ -18,7 +18,7 @@ h1 {
 
 #description-box {
     background-color: rgba(34, 12, 54, 0.746);
-    height: 34vw;
+    /*height: 34vw;*/
     padding: 1vh 1.5vw 0px 1.5vw;
     color: bisque;
 }
@@ -47,7 +47,7 @@ p {
 
 img {
     width: auto;
-    height: 34vw;
+    height: 44rem;
     display: block;
     border-color: white;
     border-width: 0.1vh;
@@ -58,11 +58,31 @@ img {
     padding: 1vw 0vw 1vw 0vw;
 }
 
-.btn-secondary {
+.btn-light {
     margin: 0vw 0vw 0vw 1vw;
+}
+
+#muy-mala:hover {
+    background-color: rgb(255, 0, 34);
+}
+
+#mala:hover {
+    background-color: rgb(255, 136, 0);
+}
+
+#buena:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+#muy-buena:hover {
+    background-color: rgb(195, 255, 0);
+}
+
+#excelente:hover {
+    background-color: rgb(9, 201, 9);
 }
 
 #send-button {
     text-align: center;
-    margin: 0vw 0vw 2vw 0vw;
+    margin: 1vw 0vw 2vw 0vw;
 }
