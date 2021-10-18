@@ -1,22 +1,14 @@
 h1{
-    color: rgb(88, 88, 76);
+    color: rgb(218, 208, 208);
     margin-top:50px;
 }
 h1:hover{
-    color: black;
+    color: rgb(170, 89, 247);
 }
-span {
-    background-color: yellow;
+h2{
+    color: rgb(170, 89, 247);
+    
 }
-
-strong {
-    color: rebeccapurple;
-}
-
-em {
-    color: rebeccapurple;
-}
-
 .titulo1{
     text-align: center;
     margin: 50px 20px 40px 20px;
@@ -35,4 +27,6 @@ em {
 
 .botonEnviar{
     text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;    
 }
