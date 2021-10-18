@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style-ro.css" />
+    <link rel="icon" href="Imagenes/movie-clapper-film.png" type="image/icon type">
+    <link rel="stylesheet" href="style-ro.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="imagenes/background-1920.png" as="image" />
     <title>Catálogo de películas</title>
 </head>
@@ -23,6 +25,31 @@
 </style>
 
 <body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
+                    <li><a href="productos-img.html" class="nav-link px-2 text-white">Cartelera</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Recomendados</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Proximos estrenos</a></li>
+                    <li><a href="TPcontacto/contacto.html" class="nav-link px-2 text-white">Contactanos</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Buscar pelicula..." aria-label="Buscar">
+                </form>
+
+
+            </div>
+        </div>
+    </header>
+
+
     <section id="galery" class="container">
         <div class="container-fluid">
             <div id="botones" class="row">
@@ -87,7 +114,6 @@
                     <div class="img-overlay img-overlay-blur">
                         <div class="img-title">After, almas perdidas</div>
                         <p class="img-subtitle">Reservar</p>
-                        <!--probando poner el tag a en distintas posiciones, para decidir cual va-->
                     </div>
                 </a>
             </div>
@@ -95,14 +121,12 @@
                 <a href="PaginaJoha.html" target="_blank">
                     <img src="Imagenes/Akira.jpg" alt="">
                     <div class="img-overlay img-overlay-blur">
-                        <!--la 2da clase es para probar otro tipo de efecto en hover, después vemos la que más nos guste-->
                         <div class="img-title">Akira</div>
                         <p class="img-subtitle">Reservar</p>
                     </div>
                 </a>
             </div>
-            <!--[MODIFICACION-FACU] Ro estaba probando usar el Href para que me enlazara a la paginaProducto para ver como quedaba,
-            el tema es que se le cambia el formato al titulo por el azul de tipo link -->
+
             <div class="col-lg-3 col-md-6">
                 <a href="PaginaJoha.html" target="_blank">
                     <img class="imagen" src="Imagenes/Candyman.jpg" alt="">
@@ -196,6 +220,67 @@
             </div>
         </div>
     </section>
+
+    <footer class="py-5 container-fluid">
+        <div class="row">
+            <div class="col-md-2 ms-auto">
+                <h5>Top Peliculas</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">El Escuadrón Suicida</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Free Guy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shang Chi y la leyenda de los diez anillos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Space Jam, una nueva era</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Maligno</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 ms-auto">
+                <h5>Top Complejos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://www.google.com.ar/maps/place/Multiplex+Monumental+Lavalle/@-34.6024456,-58.3799737,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccacea3fa76e9:0xa79f7f11f32bcafd!8m2!3d-34.60245!4d-58.377785" class="nav-link p-0 text-muted">Multiplex - Lavalle 780 (C.A.B.A.)</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.google.com.ar/maps/place/Multiplex+Cabildo/@-34.55585,-58.4636873,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb42a199818f9:0x6de66e1bd6761224!8m2!3d-34.5559354!4d-58.4616441" class="nav-link p-0 text-muted">Multiplex - Cabildo 2829(C.A.B.A.)</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.google.com.ar/maps/place/Cinemark+Caballito/@-34.6163564,-58.4310257,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccbca5a8723ad:0x841c1c80b44698b1!8m2!3d-34.6163586!4d-58.4288056" class="nav-link p-0 text-muted">Cinemark  - Av. La Plata 96(C.A.B.A.)</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.google.com.ar/maps/place/Hoyts+Dot+%7C+Cinemark+Hoyts/@-34.5463503,-58.490594,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb6c10694d555:0x88e59ff0d192bc!8m2!3d-34.5463547!4d-58.4884053" class="nav-link p-0 text-muted">Hoyts - DOT Vedia 3626(C.A.B.A.)</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.google.com.ar/maps/place/Hoyts+Abasto+%7C+Cinemark+Hoyts/@-34.6032854,-58.4130296,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca8c8513598b:0x89b570ec39dc7d88!8m2!3d-34.6032898!4d-58.4108409" class="nav-link p-0 text-muted">Hoyts - ABASTO Av. Corrientes 3247(C.A.B.A.)</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 ms-auto">
+                <h5>Proximos Estrenos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Venom</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cato</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">El ultimo duelo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Duna</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Los locos addams</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">La casa del eco</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 offset-1">
+                <form>
+                    <h5>Suscríbase a nuestro newsletter</h5>
+                    <p>Resumen mensual de nuestras novedades y estrenos.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Correo electronico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo electronico">
+                        <button class="btn btn-primary" type="button">Subscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>© 2021 Company, Inc. All rights reserved.</p>
+            <!--ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul-->
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
