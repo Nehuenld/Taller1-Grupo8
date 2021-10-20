@@ -4,20 +4,11 @@ body {
 }
 
 #botones {
-    /*esto no es para nada responsive, arreglar*/
-    /*padding-left: 20vw;*/
-    /*padding-top: 1.5vw;*/
-    margin: 20px;
+    padding-top: 2vw;
 }
 
-.dropdown {
-    float: right;
-    /*margin: 20px;*/
-}
-
-#botones-mostrar {
-    /*esto no es para nada responsive, arreglar*/
-    /*padding-left: 430px;*/
+.btn-lg {
+    font-size: 1.4rem;
 }
 
 .button-transparent {

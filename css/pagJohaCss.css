@@ -7,7 +7,7 @@ body {
     padding-top: 30px;
 }
 
-h1 {
+#titulo-video {
     font-size: 3vw;
     color: bisque;
     text-align: center;
@@ -47,7 +47,7 @@ p {
 
 img {
     width: auto;
-    height: 44rem;
+    height: 40rem;
     display: block;
     border-color: white;
     border-width: 0.1vh;
