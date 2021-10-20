@@ -6,9 +6,9 @@
 .mas {
     color:#fff!important;
 }
-h1{
+#h1{
     color: white;
-    margin: 15% 0 15%!important;
+    margin: 15% 0 15%;
 }
 
 
@@ -36,4 +36,7 @@ footer {
 footer:hover {
     background-color: rgba(39, 8, 68, 0.637);
     color: wheat;
+}
+li{
+    color: #fff;
 }
