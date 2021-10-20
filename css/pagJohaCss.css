@@ -7,13 +7,17 @@ body {
     padding-top: 30px;
 }
 
-#titulo-video {
+#titulo-producto {
     font-size: 3vw;
     color: bisque;
     text-align: center;
     font-weight: bold;
     text-shadow: 5px 5px 2px #000;
     padding-bottom: 1.4vw;
+}
+
+h1 {
+    margin: 0%!important;
 }
 
 #description-box {
