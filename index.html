@@ -90,66 +90,73 @@
             </ul>
         </div>
 
+        <!-- seccion de peliculas desde la api-->
+        <section>
+
+
+        </section>
         <section id="galery" class="container">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-xs-2">
+                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
-                            <img src="Imagenes/el-escuadron-suicida.jpg" alt="">
-                            <div class="img-overlay img-overlay-blur">
-                                <div class="img-title">El Escuadrón Suicida</div>
+                           
+                            <div class="img-overlay img-overlay-blur detalle">
+                              
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-xs-2">
+                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
-                            <img src="Imagenes/Free_Guy.jpg" alt="">
-                            <div class="img-overlay img-overlay-blur">
-                                <div class="img-title">Free Guy</div>
+                           
+                            <div class="img-overlay img-overlay-blur detalle">
+                              
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-xs-2">
+                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
-                            <img src="Imagenes/justicia-implacable.jpg" alt="">
-                            <div class="img-overlay img-overlay-blur">
-                                <div class="img-title">Justicia Implacable</div>
+                           
+                            <div class="img-overlay img-overlay-blur detalle">
+                              
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-xs-2">
+                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
-                            <img src="Imagenes/Maligno.jpg" alt="">
-                            <div class="img-overlay img-overlay-blur">
-                                <div class="img-title">Maligno</div>
+                           
+                            <div class="img-overlay img-overlay-blur detalle">
+                              
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-2">
+
+                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
-                            <img src="Imagenes/shang-chi.jpg" alt="">
-                            <div class="img-overlay img-overlay-blur">
-                                <div class="img-title">Shang Chi y la leyenda de los diez anillos</div>
+                           
+                            <div class="img-overlay img-overlay-blur detalle">
+                              
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-2">
+                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
-                            <img src="Imagenes/Space-Jam.jpg" alt="">
-                            <div class="img-overlay img-overlay-blur">
-                                <div class="img-title">Space Jam, una nueva era</div>
+                           
+                            <div class="img-overlay img-overlay-blur detalle">
+                              
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
                     </div>
+                
                 </div>
             </div>
         </section>
@@ -216,6 +223,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
+    <script>
+        
+        const section = document.getElementById('galery');
+        const requestURL = 'https://api.themoviedb.org/4/list/7113794?language=es&api_key=dc3b22860cde29d18263951f0f48ee4a&page=1';
+        const request = new XMLHttpRequest(); //instancian objeto 
+        var movies = '';
+        request.open('GET', requestURL); // setean el método, la url de api
+        request.responseType = 'json'; //definen el tipo de dato que les devuelve
+        request.send(); //envían la solicitud
+        request.onload = function() { //esperan la respuesta
+            movies = request.response; //reciben la respuesta
+            console.log(movies);
+            //rellenarHeader();
+            mostrarMovies();
+        }
+
+        /*function rellenarHeader() {
+            let titulo = document.getElementByClass("img-title");
+            titulo.innerHTML = movies.original_title;
+            let subtitulo = document.getElementById("subtitulo");
+            subtitulo.innerHTML = "Hometown:" + movies.homeTown + " // Formed: " + movies.formed;
+
+        }*/
+
+        function mostrarMovies() {
+            let pelicula = movies.results;
+            for (i = 0; i < pelicula.length; i++) {
+                let container = document.createElement("div");
+                let row = document.createElement('div');
+                let col = document.createElement('div');
+                let a = createElement 
+                let image = document.createElement('img');
+                let title = document.createElement('div');
+
+
+                title.textContent = pelicula[i].original_title;
+                //myp.textContent = 'Identidad Secreta: ' + pelicula[i].overview;
+                //myp1.textContent = 'Edad: ' + pelicula[i].release_date;
+                //myp2.textContent = 'Super Poder: ';
+                image.src = 'https://image.tmdb.org/t/p/w500/' + pelicula[i].poster_path;
+                
+                
+                section.appendChild(image);
+                section.appendChild(title);
+
+
+
+            }
+
+        }
+    </script>
 </body>
 
 </html>
