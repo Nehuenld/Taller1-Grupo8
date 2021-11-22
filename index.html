@@ -97,8 +97,8 @@
         </section>
         <section id="galery" class="container">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
+                <div class="row" id="grid-movies">
+                    <!-- <div class="col-lg-4 col-md-6 col-xs-2 card-movie">
                         <a href="PaginaProductoIndividual.html" target="_blank">
                            
                             <div class="img-overlay img-overlay-blur detalle">
@@ -155,7 +155,7 @@
                                 <p class="img-subtitle">Reservar</p>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 
                 </div>
             </div>
@@ -225,7 +225,7 @@
     -->
     <script>
         
-        const section = document.getElementById('galery');
+        const section = document.getElementById('grid-movies');
         const requestURL = 'https://api.themoviedb.org/4/list/7113794?language=es&api_key=dc3b22860cde29d18263951f0f48ee4a&page=1';
         const request = new XMLHttpRequest(); //instancian objeto 
         var movies = '';
@@ -250,23 +250,26 @@
         function mostrarMovies() {
             let pelicula = movies.results;
             for (i = 0; i < pelicula.length; i++) {
-                let container = document.createElement("div");
-                let row = document.createElement('div');
-                let col = document.createElement('div');
-                
-                let image = document.createElement('img');
-                let title = document.createElement('div');
+                let myDiv = document.createElement('div');
+                let image = 'https://image.tmdb.org/t/p/w500/' + pelicula[i].poster_path;
+                let title = pelicula[i].original_title;
+               
 
-
-                title.textContent = pelicula[i].original_title;
+                //title.textContent = pelicula[i].original_title;
                 //myp.textContent = 'Identidad Secreta: ' + pelicula[i].overview;
                 //myp1.textContent = 'Edad: ' + pelicula[i].release_date;
                 //myp2.textContent = 'Super Poder: ';
-                image.src = 'https://image.tmdb.org/t/p/w500/' + pelicula[i].poster_path;
-                
-                
-                section.appendChild(image);
-                section.appendChild(title);
+                //image.src = 'https://image.tmdb.org/t/p/w500/' + pelicula[i].poster_path;
+                const card = ` <div class="col-lg-3 col-md-6"><a href="PaginaProductoIndividual.html" target="_blank">
+                        <img class="imagen" src="${image}" alt="">
+                        <div class="img-overlay img-overlay-blur">
+                            <div id="Candyman" class="img-title">${title}</div>
+                            <p class="img-subtitle">Reservar</p>
+                        </div>
+                        </a></div>`;
+                myDiv.innerHTML = card;
+                //section.innerHTML = card ;
+                section.appendChild(myDiv);
 
 
 
@@ -274,6 +277,10 @@
 
         }
     </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
