@@ -16,22 +16,25 @@ let listadoPeliculas2 = movies.results;
 
 
 function crearPelicula() {
+
+    let params = new URLSearchParams(location.search);
+    let id = params.get('id');
     let listadoPeliculas = movies.results;
 
     let myH1 = document.getElementById("titulo-producto");
-    myH1.textContent = listadoPeliculas[2].title;
+    myH1.textContent = listadoPeliculas[id].title;
 
     let myImage = document.getElementById("imagen");
-    myImage.src = 'https://image.tmdb.org/t/p/w500/' + listadoPeliculas[2].poster_path;
+    myImage.src = 'https://image.tmdb.org/t/p/w500/' + listadoPeliculas[id].poster_path;
 
     let sinopsis = document.getElementById("sinopsis");
-    sinopsis.textContent = listadoPeliculas[2].overview;
+    sinopsis.textContent = listadoPeliculas[id].overview;
 
     let fechaEstreno = document.getElementById("fecha-estreno");
-    fechaEstreno.textContent = listadoPeliculas[2].release_date;
+    fechaEstreno.textContent = listadoPeliculas[id].release_date;
 
     let generos = document.getElementById("genero");
-    generos.textContent = listadoPeliculas[2].genre_ids;
+    generos.textContent = listadoPeliculas[id].genre_ids;
 
 
     for (let i = 0; i < listadoPeliculas.length; i++) {
@@ -48,9 +51,15 @@ function crearPelicula() {
             //crearPelicula();
         }
 
-
     }
 
     // console.log(details.runtime);
 
+}
+
+function validator() {
+    let comentario = $("#comentario").val();
+    if (comentario == '') {
+        console.log("Ingresar comentario");
+    }
 }

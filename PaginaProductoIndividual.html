@@ -68,7 +68,7 @@
                 <p id="duracion"></p>
                 <p><b>Géneros: </b></p>
                 <p id="genero"></p>
-                <p><b>Reparto: </b>Josephine Langford, Hero Fiennes-Tiffin, Arielle Kebbel, Mira Sorvino, Louise Lombard, Stephen Moyer, Chance Perdomo, Rob Estes, Carter Jenkins, Kiana Madeira, Frances Turner</p>
+                <p><b>Reparto: </b></p>
                 <div style="text-align: center; ">
                     <button class="mt-5 m-5 btn btn-danger" data-bs-toggle="modal" data-bs-target="#miModal">Ver Trailer</button>
                 </div>
@@ -106,11 +106,11 @@
             <div id="comments-box" class="col-8">
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">¡Dejanos tu opinión sobre la película!</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tu comentario acá"></textarea>
+                    <textarea class="form-control" id="comentario" rows="3" placeholder="Tu comentario acá"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tu e-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
                 </div>
 
                 <div id="buttons-range">
@@ -132,7 +132,7 @@
                             </button>
                 </div>
                 <div style="text-align: center; ">
-                    <button id="send-button" class="btn btn-danger btn-lg" type="submit">Enviar</button>
+                    <button id="send-button" class="btn btn-danger btn-lg" type="button" onclick="javascript:validator()">Enviar</button>
                 </div>
             </div>
             <div class="col-2"></div>
@@ -195,6 +195,7 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="javascript/jsPaginaProducto.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/script-producto-individual.js"></script>
