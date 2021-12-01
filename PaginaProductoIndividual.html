@@ -12,7 +12,6 @@
     <link rel="icon" href="Imagenes/movie-clapper-film.png" type="image/icon type">
     <link rel="stylesheet" href="css/pagJohaCss.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="imagenes/background-1920.png" as="image" />
 
 </head>
 
@@ -50,22 +49,25 @@
         </div>
     </header>
 
+
     <div id="main-container" class="container">
-        <div class="row">
-            <h1 id="titulo-producto">After, almas perdidas</h1>
+        <div id="container-pelicula" class="row">
+
+            <h1 id="titulo-producto"></h1>
             <div class="col">
-                <img src="Imagenes/After-almas-perdidas.jpg" alt="">
+                <img id="imagen" src="" alt="">
             </div>
             <div id="description-box" class="col">
                 <h2><b>Descripción</b></h2>
                 <h3><b>Sinópsis</b></h3>
-                <p>Cuando Tessa (Josephine Langford) toma la decisión más importante de su vida, todo cambia. Los secretos que salen a la luz sobre su familia y la de Hardin (Hero Finnes-Tiffin) ponen en peligro su relación y su futuro juntos. La vida de
-                    Tessa empieza a romperse en pedazos y ya nada será como antes. Aunque sabe que Hardin la quiere, estas dos almas perdidas están rodeadas de celos, odio... y perdón. Hasta ahora, el amor era suficiente para mantener su relación a flote,
-                    pero ¿de verdad sigue mereciendo la pena?</p>
+                <p id="sinopsis"></p>
 
-                <p><b>Fecha de estreno: </b>02 de Septiembre de 2021</p>
-                <p><b>Duración: </b>99 min.</p>
-                <p><b>Género: </b>Romance. Drama.</p>
+                <p><b>Fecha de estreno: </b></p>
+                <p id="fecha-estreno"></p>
+                <p><b>Duración: </b></p>
+                <p id="duracion"></p>
+                <p><b>Géneros: </b></p>
+                <p id="genero"></p>
                 <p><b>Reparto: </b>Josephine Langford, Hero Fiennes-Tiffin, Arielle Kebbel, Mira Sorvino, Louise Lombard, Stephen Moyer, Chance Perdomo, Rob Estes, Carter Jenkins, Kiana Madeira, Frances Turner</p>
                 <div style="text-align: center; ">
                     <button class="mt-5 m-5 btn btn-danger" data-bs-toggle="modal" data-bs-target="#miModal">Ver Trailer</button>
@@ -195,6 +197,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="javascript/jsPaginaProducto.js"></script>
     <script src="javascript/script.js"></script>
+    <script src="javascript/script-producto-individual.js"></script>
 </body>
 
 </html>
