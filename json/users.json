@@ -1,13 +1,19 @@
 {
-   "user": [
-        {
-            "idUSer": 1,
-            "name":"",
-            "email":"",
+    "users": [{
+            "idUser": 1,
+            "user": "administradorcine1",
+            "password": "e9fd726ec71481f5084d7e7cea622c8c5aa3341064e47f2224b69c2d7be2c2ca",
+            "salt": "cosa",
+            "perfil": "admin",
             "status": true
         },
         {
-            "idUser": 2
+            "idUser": 2,
+            "user": "administradorcine2",
+            "password": "c5cb53b565af65c6c13c9343e9d8e2cb660cff1fcca8f807818331031f5de6c6",
+            "salt": "cosa",
+            "perfil": "admin",
+            "status": true
         }
     ]
 }
