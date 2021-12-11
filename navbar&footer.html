@@ -5,34 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
-    <link rel="icon" href="Imagenes/movie-clapper-film.png" type="image/icon type">
-    <link rel="stylesheet" href="style-ro.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="imagenes/background-1920.png" as="image" />
-    <title>Log in</title>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<style>
-    body {
-        background-color: rgb(30, 27, 43);
-        background-image: url(Imagenes/background-1920.jpg);
-        background-size: 100% auto;
-    }
-</style>
 
-<body class="text-center">
+<body>
+
     <header class="p-3 bg-dark text-white">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                     <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
                 </a>
+
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
-                    <li><a href="PaginaGaleriaDeProductos.html" class="nav-link px-2 text-white">Cartelera</a></li>
+                    <li><a href="productos-img.html" class="nav-link px-2 text-white">Cartelera</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Recomendados</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Proximos estrenos</a></li>
                     <li><a href="TPcontacto/contacto.html" class="nav-link px-2 text-white">Contactanos</a></li>
@@ -46,31 +34,6 @@
             </div>
         </div>
     </header>
-    <div class="container">
-
-        <main class="form-signin">
-            <form>
-                <h1 style="color: aliceblue;">ingrese los datos</h1>
-
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="username" placeholder="name@example.com">
-                    <label for="floatingInput">usuario </label>
-                </div>
-                <div class="form-floating mb-30">
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                    <label for="floatingPassword">Contraseña</label>
-                </div>
-
-                <button class="w-100 btn btn-lg btn-primary " type="button" onclick="checkUserLogin();">Ingresar</button>
-
-            </form>
-        </main>
-    </div>
-
-    <form id="login-form" method="get" action="sidebar.html">
-        <input type="hidden" id="userId" />
-    </form>
-
     <footer class="py-5 container-fluid">
         <div class="row">
             <div class="col-md-2 ms-auto">
@@ -123,13 +86,6 @@
 
 
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-    <script src="javascript/login.js"></script>
-
 </body>
 
 </html>

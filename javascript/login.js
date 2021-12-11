@@ -1,3 +1,4 @@
+//hasheo de contraseñas
 async function sha256(message) {
     const msgBuffer = new TextEncoder('utf-8').encode(message)
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
@@ -6,13 +7,14 @@ async function sha256(message) {
     return hashHex;
 }
 
+//funcion chequeo de usuarios
 function checkUserLogin() {
     let username = $('#username').val();
     let password = $('#password').val();
     if (username == '' || password == '') {
-        alert('Debe ingresar el usario y la contraseña para continuar');
+        alert('Debe ingresar el usuario y la contraseña para continuar');
     } else {
-        let url = "user.json";
+        let url = "useradmin.json";
         $.getJSON(url, function(data) {
                 // console.log(data);
                 sha256(password).then(function(respuestaHash) {
