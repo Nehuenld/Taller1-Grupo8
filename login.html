@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descripción del producto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
     <link rel="icon" href="Imagenes/movie-clapper-film.png" type="image/icon type">
-    <link rel="stylesheet" href="css/pagJohaCss.css">
+    <link rel="stylesheet" href="style-ro.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="preload" href="imagenes/background-1920.png" as="image" />
+    <title>Log in</title>
 </head>
-
 <style>
     body {
         background-color: rgb(30, 27, 43);
@@ -23,15 +23,13 @@
     }
 </style>
 
-<body>
-
+<body class="text-center">
     <header class="p-3 bg-dark text-white">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                     <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
                 </a>
-
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
                     <li><a href="PaginaGaleriaDeProductos.html" class="nav-link px-2 text-white">Cartelera</a></li>
@@ -48,99 +46,30 @@
             </div>
         </div>
     </header>
+    <div class="container">
 
+        <main class="form-signin">
+            <form>
+                <h1 style="color: aliceblue;">ingrese los datos</h1>
 
-    <div id="main-container" class="container">
-        <div id="container-pelicula" class="row">
-
-            <h1 id="titulo-producto"></h1>
-            <div class="col">
-                <img id="imagen" src="" alt="">
-            </div>
-            <div id="description-box" class="col">
-                <h2><b>Descripción</b></h2>
-                <h3><b>Sinópsis</b></h3>
-                <p id="sinopsis"></p>
-
-                <p><b>Fecha de estreno: </b></p>
-                <p id="fecha-estreno"></p>
-                <p><b>Duración: </b></p>
-                <p id="duracion"></p>
-                <p><b>Géneros: </b></p>
-                <p id="genero"></p>
-                <p><b>Reparto: </b></p>
-                <p id="reparto"></p>
-                <div style="text-align: center; ">
-                    <button class="mt-5 m-5 btn btn-danger" data-bs-toggle="modal" data-bs-target="#miModal">Ver Trailer</button>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="username" placeholder="name@example.com">
+                    <label for="floatingInput">usuario </label>
                 </div>
-            </div>
-        </div>
+                <div class="form-floating mb-30">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+
+                <button class="w-100 btn btn-lg btn-primary " type="button" onclick="checkUserLogin();">Ingresar</button>
+
+            </form>
+        </main>
     </div>
 
-    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="Pelicula 1">
-        <div class="modal-dialog modal-lg">
-            <div id="trailer-modal" class="modal-content">
-                <div class="modal-header">
-                    <h5>TRAILER</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="ratio ratio-16x9">
-                            <iframe id="URL-video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success">Reservar</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-
-        </div>
-    </div>
-
-    </div>
-    <div class="container" style="padding-top: 3vw;">
-        <div class="row">
-            <div class="col-2"></div>
-            <div id="comments-box" class="col-8">
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">¡Dejanos tu opinión sobre la película!</label>
-                    <textarea class="form-control" id="comentario" rows="3" placeholder="Tu comentario acá"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Tu e-mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
-                </div>
-
-                <div id="buttons-range">
-                    <label for="exampleFormControlTextarea1" class="form-label">¿Qué puntuación le darías?</label>
-                    <button type="button" id="muy-mala" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Muy mala">
-                                ☆
-                              </button>
-                    <button type="button" id="mala" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Mala">
-                                ☆
-                              </button>
-                    <button type="button" id="buena" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Buena">
-                                ☆
-                              </button>
-                    <button type="button" id="muy-buena" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Muy buena">
-                                ☆
-                              </button>
-                    <button type="button" id="excelente" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Excelente">
-                                ☆
-                            </button>
-                </div>
-                <div style="text-align: center; ">
-                    <button id="send-button" class="btn btn-danger btn-lg" type="button" onclick="javascript:validator()">Enviar</button>
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
-    </div>
-
-    </div>
+    <form id="login-form" action="sidebar.html">
+        <input type="hidden" name="id" id="userId" />
+    </form>
 
     <footer class="py-5 container-fluid">
         <div class="row">
@@ -192,13 +121,15 @@
             <p>© 2021 Diseñado por Grupo 8®.</p>
         </div>
 
+
     </footer>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="javascript/jsPaginaProducto.js"></script>
-    <script src="javascript/script-producto-individual.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <script src="javascript/login.js"></script>
+
 </body>
 
 </html>

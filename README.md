@@ -1,8 +1,14 @@
 # Taller1-Grupo8
-Taller 1 grupo 8 
 
 
+# Autors: 
+Rocio Catalano
+Alexander Gomez
+Facundo Beltran 
+Nehuen Diaz
 
-Pagina web para buscar pelis estrenos en tu cine favorito
+*Pagina web con cartelera de cine*
 
-Usar bootrasp para pagina de contacto
+https://nehuenld.github.io/Taller1-Grupo8/
+
+

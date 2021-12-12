@@ -1,0 +1,9 @@
+hasheado en "sha256"
+
+user: "administradorcine1"
+pass:"cineapp2021"
+
+2
+
+user: "administradorcine2"
+pass:"cine2021"

@@ -20,8 +20,9 @@ function crearImagenes() {
     for (let i = 0; i < listadoPeliculas.length; i++) {
         let myDivRow1 = document.createElement("div");
         myDivRow1.className = "col-lg-3 col-md-6 col-xs-2";
+
         let myLink = document.createElement("a");
-        myLink.href = "PaginaProductoIndividual.html";
+        myLink.href = "PaginaProductoIndividual.html?id=" + i;
         myLink.target = "_blank";
 
         let myImg = document.createElement("img");
