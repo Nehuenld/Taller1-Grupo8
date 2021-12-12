@@ -31,11 +31,9 @@ function crearPelicula() {
     let fechaEstreno = document.getElementById("fecha-estreno");
     fechaEstreno.textContent = listadoPeliculas[id].release_date;
 
-    let generos = document.getElementById("genero");
-    generos.textContent = listadoPeliculas[id].genre_ids;
 
     //forma de llegar a más detalles de cada pelicula!
-    const request2URL = `https://api.themoviedb.org/3/movie/${listadoPeliculas[id].id}?api_key=dc3b22860cde29d18263951f0f48ee4a`;
+    const request2URL = `https://api.themoviedb.org/3/movie/${listadoPeliculas[id].id}?api_key=dc3b22860cde29d18263951f0f48ee4a&language=es`;
     const request2 = new XMLHttpRequest();
     var details = '';
     request2.open('GET', request2URL);
@@ -43,12 +41,24 @@ function crearPelicula() {
     request2.send();
     request2.onload = function() {
         details = request2.response;
+        console.log(details);
         cargarDetalles();
     }
 
     function cargarDetalles() {
         let duracion = document.getElementById("duracion");
-        duracion.textContent = details.runtime + " minutos";
+        if (details.runtime != 0) {
+            duracion.textContent = details.runtime + " minutos";
+        } else {
+            duracion.textContent = "Información no disponible";
+        }
+
+        let arrayGeneros = [];
+        for (let i = 0; i < details.genres.length; i++) {
+            arrayGeneros.push(details.genres[i].name);
+        }
+        let generos = document.getElementById("genero");
+        generos.textContent = arrayGeneros.join(", ") + ".";
     }
 
     const requestVideoURL = `https://api.themoviedb.org/3/movie/${listadoPeliculas[id].id}/videos?api_key=dc3b22860cde29d18263951f0f48ee4a&language=es`;
@@ -75,7 +85,6 @@ function crearPelicula() {
     requestCast.send();
     requestCast.onload = function() {
         reparto = requestCast.response;
-        console.log(reparto);
         cargarReparto();
     }
 
@@ -84,10 +93,10 @@ function crearPelicula() {
         for (let i = 0; i < 6; i++) {
             arrayNombres.push(reparto.cast[i].name);
         }
-        let myReparto = document.getElementById("reparto");
-        myReparto.textContent = arrayNombres.toString();
 
-        console.log(arrayNombres);
+        let myReparto = document.getElementById("reparto");
+        myReparto.textContent = arrayNombres.join(", ") + ".";
+
     }
 
 
@@ -100,6 +109,8 @@ function validator() {
     }
 }
 
+
+//tooltips para valoración con estrellas, importante
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
