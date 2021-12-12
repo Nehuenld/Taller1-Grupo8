@@ -59,7 +59,7 @@ function checkUser(data, username, password) {
 
 
 }
-//funcion panel
+//funcion obtener parametros URL
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
