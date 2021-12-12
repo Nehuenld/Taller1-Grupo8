@@ -28,7 +28,7 @@ function checkUserLogin() {
             })
     }
 }
-
+//funcion chequeo de usuarios
 function checkUser(data, username, password) {
     var user = false;
     $.each(data.users, function(key, val) {
@@ -59,3 +59,12 @@ function checkUser(data, username, password) {
 
 
 }
+//funcion panel
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+let params = new URLSearchParams(location.search);
