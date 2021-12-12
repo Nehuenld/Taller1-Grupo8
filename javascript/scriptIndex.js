@@ -1,5 +1,5 @@
   
-        const section = document.getElementById('grid-movies1');
+        const sectionGrid = document.getElementById('grid-movies1');
         const requestURL = 'https://api.themoviedb.org/4/list/7113794?language=es&api_key=dc3b22860cde29d18263951f0f48ee4a&page=1';
         const request = new XMLHttpRequest(); //instancian objeto 
         var movies = '';
@@ -35,8 +35,9 @@
                                     </a>`;
               
                 contCard.appendChild(cardDiv);
-                section.appendChild(contCard);
+                sectionGrid.appendChild(contCard);
 
             }
 
         }
+
