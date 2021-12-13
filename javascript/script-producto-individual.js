@@ -103,9 +103,34 @@ function crearPelicula() {
 }
 
 function validator() {
+    let modal = new bootstrap.Modal(document.getElementById("myModal"));
     let comentario = $("#comentario").val();
+    let email = $("#email").val();
     if (comentario == '') {
-        console.log("Ingresar comentario");
+        let modalTitle = document.getElementById("modal-title");
+        modalTitle.textContent = "Comentario requerido";
+        let modalBody = document.getElementById("modal-body");
+        modalBody.textContent = "Por favor, ingrese un comentario para continuar";
+        modal.show();
+    } else if (email == '') {
+        let modalTitle = document.getElementById("modal-title");
+        modalTitle.textContent = "E-mail requerido";
+        let modalBody = document.getElementById("modal-body");
+        modalBody.textContent = "Por favor, ingrese su correo electrónico para continuar";
+        modal.show();
+    } else {
+        let modalTitle = document.getElementById("modal-title");
+        modalTitle.textContent = "Enviar comentario";
+        let modalBody = document.getElementById("modal-body");
+        modalBody.textContent = "¿Está seguro de que desea enviar su comentario?";
+        let modalFooter = document.getElementById("modal-footer");
+        let myButton = document.createElement("button");
+        myButton.type = "button";
+        myButton.className = "btn btn-primary";
+        myButton.textContent = "Confirmar";
+        modalFooter.appendChild(myButton);
+
+        modal.show();
     }
 }
 

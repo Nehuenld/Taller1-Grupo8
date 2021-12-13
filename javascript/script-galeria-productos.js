@@ -3,16 +3,21 @@ const section = document.querySelector('section');
 const row = document.getElementById("gallery-row");
 
 const requestURL = 'https://api.themoviedb.org/4/list/7113794?language=es&api_key=dc3b22860cde29d18263951f0f48ee4a&page=1';
-const request = new XMLHttpRequest(); //instancian objeto 
+const request = new XMLHttpRequest();
 var movies = '';
-request.open('GET', requestURL); // setean el método, la url de api
-request.responseType = 'json'; //definen el tipo de dato que les devuelve
-request.send(); //envían la solicitud
-request.onload = function() { //esperan la respuesta
-    movies = request.response; //reciben la respuesta
+//let listadoPelis = '';
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+    movies = request.response;
+    //listadoPelis = movies.results;
     console.log(movies);
+    //console.log(listadoPelis);
     crearImagenes();
 }
+
+
 
 function crearImagenes() {
     let listadoPeliculas = movies.results;
@@ -45,7 +50,6 @@ function crearImagenes() {
         myLink.appendChild(myDivOverlay);
         myDivOverlay.appendChild(myDivImgTitle);
         myDivOverlay.appendChild(myDivImgSubtitle);
-
 
     }
 }
