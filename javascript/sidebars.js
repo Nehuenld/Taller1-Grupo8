@@ -18,7 +18,8 @@ function mostrarJson(){
     request.send(); //envían la solicitud
     request.onload = function() { //esperan la respuesta
         jsonStr = request.response;
-        let jsonView = JSON.stringify(jsonStr);
+        const newLocal = JSON.stringify(jsonStr)
+        let jsonView = newLocal;
         console.log(jsonView);       
         
         //sectionGrid.innerHTML = jsonView;
@@ -49,7 +50,8 @@ function mostrarJson(){
     });
 
     
-
+        sectionGrid.style.color= "white";
+        sectionGrid.style.backgroundColor = "black";
         sectionGrid.innerHTML += regeStr; // inserta el resultado en el HTML
     }
     
