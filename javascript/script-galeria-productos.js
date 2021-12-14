@@ -21,7 +21,7 @@ request.onload = function() {
 //let listadoPeliculas = movies.results;
 
 function crearImagenes(listadoPeliculas) {
-    
+
     for (let i = 0; i < listadoPeliculas.length; i++) {
         let myDivRow1 = document.createElement("div");
         myDivRow1.className = "col-lg-3 col-md-6 col-xs-2";
@@ -113,7 +113,7 @@ function pelisComedia() {
         }
     }
     crearImagenes(listadoPeliculas);
-    
+
 }
 
 function pelisCrimen() {
@@ -188,6 +188,20 @@ function idiomaIng() {
 
     for (let i = 0; i < peliculas.length; i++) {
         if (peliculas[i].original_language == "en") {
+            listadoPeliculas.push(peliculas[i]);
+        }
+    }
+    crearImagenes(listadoPeliculas);
+
+}
+
+function idiomaEs() {
+    row.innerHTML = "";
+    let peliculas = movies.results;
+    let listadoPeliculas = [];
+
+    for (let i = 0; i < peliculas.length; i++) {
+        if (peliculas[i].original_language == "es") {
             listadoPeliculas.push(peliculas[i]);
         }
     }
