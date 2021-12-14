@@ -11,8 +11,13 @@
 
 
     <link rel="icon" href="Imagenes/movie-clapper-film.png" type="image/icon type">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/style-ro.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+=======
+    <link rel="stylesheet" href="css/style-ro.css">
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> ea4ffc3715c006d8c069f35cdae58f7c955ae4f2
     <link rel="preload" href="imagenes/background-1920.png" as="image" />
     <title>Catálogo de películas</title>
 </head>
@@ -35,8 +40,6 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
                     <li><a href="PaginaGaleriaDeProductos.html" class="nav-link px-2 text-white">Cartelera</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Recomendados</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Proximos estrenos</a></li>
                     <li><a href="TPcontacto/contacto.html" class="nav-link px-2 text-white">Contactanos</a></li>
                 </ul>
 
@@ -60,7 +63,7 @@
                           Ordenar
                         </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Destacados</a></li>
+                                <li><a class="dropdown-item" onclick="javaScript: destacados();">Destacados</a></li>
                                 <li> <a class="dropdown-item" type="button" onclick="javaScript: ordenAsc();"> A-Z</a></li>
                                 <li><a class="dropdown-item" type="button" onclick="javaScript: ordenDesc();">Z-A</a></li>
                             </ul>
@@ -74,33 +77,33 @@
                               Mostrar por categoría
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Acción</a></li>
-                                    <li><a class="dropdown-item" href="#">Comedia</a></li>
-                                    <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
-                                    <li><a class="dropdown-item" href="#">Documental</a></li>
-                                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                                    <li><a class="dropdown-item" href="#">Documental</a></li>
-                                    <li><a class="dropdown-item" href="#">Terror</a></li>
-                                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisAccion();">Acción</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisComedia();">Comedia</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisCrimen();">Crimen</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisDocumental();">Documental</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisDrama();">Drama</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisTerror();">Terror</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: pelisSuspenso();">Suspenso</a></li>
                                 </ul>
                             </div>
                             <div class="px-2 col-auto">
                                 <button class="btn dropdown-toggle button-transparent btn-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Mostrar por idioma
+                            Mostrar por idioma original
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Subtituladas</a></li>
-                                    <li><a class="dropdown-item" href="#">Dobladas</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: idiomaIng();">Inglés</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: idiomaEs();">Español</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: idiomaOtros();">Otros</a></li>
                                 </ul>
                             </div>
                             <div class="px-2 col-auto">
                                 <button class="btn dropdown-toggle button-transparent btn-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Mostrar por empresa
+                              Mostrar por puntuación
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Fox</a></li>
-                                    <li><a class="dropdown-item" href="#">Marvel</a></li>
-                                    <li><a class="dropdown-item" href="#">Dreamworks</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: punt8();">Más de 8</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: punt6();">Más de 6</a></li>
+                                    <li><a class="dropdown-item" onclick="javaScript: puntOtros();">Menos de 6</a></li>
                                 </ul>
                             </div>
                         </div>

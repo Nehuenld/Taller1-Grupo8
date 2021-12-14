@@ -21,7 +21,7 @@
             let pelicula = movies.results;
             for (i = 0; i < pelicula.length && i < 6; i++) {
                 let cardDiv = document.createElement('div');
-               cardDiv.className = "col-lg-4 col-md-8";
+               cardDiv.className = "col-xl-3 col-lg-4 col-md-6 col-sm-8";
                 let image = 'https://image.tmdb.org/t/p/w500/' + pelicula[i].poster_path;
                 let title = pelicula[i].original_title;
                 
