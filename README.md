@@ -2,7 +2,7 @@
 
 
 
-[![GitHub Page](https://img.shields.io/badge/chrome%20web%20store-v1.0.0-blue.svg?style=flat-square)](https://nehuenld.github.io/Taller1-Grupo8/)
+[![GitHub Page]](https://nehuenld.github.io/Taller1-Grupo8/)
 
 
 > Busca los estrenos de Api https://www.themoviedb.org/documentation/api y los muestra, pagina de cada pelicula con trailer, pagina de contacto y pagina de admin para poder ver el Json de la api.
@@ -22,22 +22,22 @@ Mostrar de una **manera amigable** los estrenos de cine
 1. Abrí este link : [Web Page](https://nehuenld.github.io/Taller1-Grupo8/)
 
 2. Para ingresar a la seccion de admin
-[Web Page](https://nehuenld.github.io/Taller1-Grupo8/login.html)
+[Admin](https://nehuenld.github.io/Taller1-Grupo8/admin/login.html)
 
 3. Entra con los usuarios y contraseñas correspondientes
 
-user: "administradorcine1"
-pass:"cineapp2021"
+    user: "administradorcine1"
+    pass:"cineapp2021"
 
-user: "administradorcine2"
-pass:"cine2021"
+    user: "administradorcine2"
+    pass:"cine2021"
 
 4. Hace click en el icono de Json del sidebar y click en Overwiew para ver el codigo de la api.
 
 
 ## Screenshot
 
-![Screenshot](https://ibb.co/cNkLqsc "Screenshot")
+![Screenshot](https://i.ibb.co/PFnCFmV/imagen.png"Screenshot")
 
 ## Cosas a hacer
 
