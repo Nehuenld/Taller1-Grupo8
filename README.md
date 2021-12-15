@@ -59,6 +59,9 @@ Mostrar de una **manera amigable** los estrenos de cine
 * [Facundo Beltran ](https://github.com/facubeltran)
 * [Nehuen Diaz](https://github.com/Nehuenld)
 
+## Video Presentacion
+
+https://drive.google.com/drive/folders/1DFej9gQs0Y0g3JuNmpcFk1gdvgLLCWN0?usp=sharing
 
 ## Licencia
 
